@@ -74,8 +74,15 @@ tailwind.config = {
     content:''; position:absolute; inset:0; pointer-events:none; opacity:.06;
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='120' height='120' filter='url(%23n)'/></svg>");
   }
-  .js .reveal { opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+  /* Progressive enhancement: hidden only while JS is running and motion is allowed. */
+  .js .reveal { opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; will-change:opacity,transform; }
   .js .reveal.in { opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce) {
+    .js .reveal, .js .reveal.in {
+      opacity:1 !important; transform:none !important;
+      transition:none !important; transition-delay:0ms !important;
+    }
+  }
   body.nav-open { overflow:hidden; }
 </style>
 <script>document.documentElement.classList.add('js');</script>
@@ -176,11 +183,13 @@ tailwind.config = {
       </a>
     </div>
 
-    <div class="mt-12 flex flex-wrap items-center gap-x-7 gap-y-3 text-[11px] uppercase tracking-wide2 text-cream-dim">
-      <span>Local Meat On Grill</span><span class="text-gold/40" aria-hidden="true">|</span>
-      <span>Smoked</span><span class="text-gold/40" aria-hidden="true">|</span>
-      <span>Cured</span>
-    </div>
+    <ul data-reveal-group class="mt-12 flex flex-wrap items-center gap-x-5 gap-y-3 text-[11px] uppercase tracking-wide2 text-cream-dim">
+      <li class="reveal">Local Meat On Grill</li>
+      <li class="text-gold/40" aria-hidden="true">|</li>
+      <li class="reveal">Smoked</li>
+      <li class="text-gold/40" aria-hidden="true">|</li>
+      <li class="reveal">Cured</li>
+    </ul>
   </div>
 </section>
 
@@ -190,7 +199,7 @@ tailwind.config = {
     <h2 id="signature-h" class="text-center text-[11px] uppercase tracking-wide3 text-gold/80">Our Signatures</h2>
     <div class="mx-auto mt-3 h-px w-16 rule-gold"></div>
 
-    <ul class="mt-10 grid grid-cols-2 gap-x-5 gap-y-8 sm:gap-8 md:grid-cols-4">
+    <ul data-reveal-group class="mt-10 grid grid-cols-2 gap-x-5 gap-y-8 sm:gap-8 md:grid-cols-4">
       <li class="reveal text-center">
         <div class="mx-auto aspect-square w-full max-w-[190px] overflow-hidden rounded-full ring-1 ring-gold/25">
           <img src="images/slow-cooked-meat-platters.jpg" alt="Trays of slow-cooked meat prepared for a Chef Kams event" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105">
@@ -236,7 +245,7 @@ tailwind.config = {
       </p>
     </div>
 
-    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div data-reveal-group class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
       <article class="reveal group relative overflow-hidden rounded-card bg-ink-800 shadow-card ring-1 ring-gold/12">
         <div class="aspect-[4/5] overflow-hidden">
@@ -353,7 +362,7 @@ tailwind.config = {
       </p>
     </div>
 
-    <ul id="gallery-grid" class="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+    <ul id="gallery-grid" data-reveal-group class="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
       <li class="reveal">
         <button type="button" class="group block w-full overflow-hidden rounded-card ring-1 ring-gold/12 focus-visible:ring-2 focus-visible:ring-gold"
                 data-full="images/chef-kams-bush-dessert-service.jpg" data-caption="Chef Kams presenting a dessert service in the bush">
@@ -445,10 +454,10 @@ tailwind.config = {
         </p>
         <p class="mt-7 font-script text-2xl text-gold">You celebrate. We take care of the rest.</p>
 
-        <dl class="mt-10 grid grid-cols-3 gap-4 border-t border-gold/15 pt-8">
-          <div><dt class="text-[10px] uppercase tracking-wide2 text-cream/55">Grill</dt><dd class="mt-1.5 font-display text-lg text-gold">LOCAL MEAT</dd></div>
-          <div><dt class="text-[10px] uppercase tracking-wide2 text-cream/55">In-house</dt><dd class="mt-1.5 font-display text-lg text-gold">SMOKED</dd></div>
-          <div><dt class="text-[10px] uppercase tracking-wide2 text-cream/55">In-house</dt><dd class="mt-1.5 font-display text-lg text-gold">CURED</dd></div>
+        <dl data-reveal-group class="mt-10 grid grid-cols-3 gap-4 border-t border-gold/15 pt-8">
+          <div class="reveal"><dt class="text-[10px] uppercase tracking-wide2 text-cream/55">Grill</dt><dd class="mt-1.5 font-display text-lg text-gold">LOCAL MEAT</dd></div>
+          <div class="reveal"><dt class="text-[10px] uppercase tracking-wide2 text-cream/55">In-house</dt><dd class="mt-1.5 font-display text-lg text-gold">SMOKED</dd></div>
+          <div class="reveal"><dt class="text-[10px] uppercase tracking-wide2 text-cream/55">In-house</dt><dd class="mt-1.5 font-display text-lg text-gold">CURED</dd></div>
         </dl>
       </div>
     </div>
@@ -673,18 +682,63 @@ tailwind.config = {
     else if (open) setNav(false);
   });
 
-  /* ---------- reveal on scroll ---------- */
-  var items = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window) ||
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    items.forEach(function (el) { el.classList.add('in'); });
+  /* ---------- staggered reveal on scroll ----------
+     Content is visible by default (see .js gating in CSS): if this script never
+     runs, nothing is hidden. Each element reveals exactly once - it is
+     unobserved on entry, so scrolling back up never re-fires it. */
+  var STAGGER_MS = 170;   // offset between siblings
+  var STAGGER_MAX = 5;    // cap so a long wave never stalls
+  var WAVE_MS = 400;      // siblings arriving within this window share a wave
+
+  var revealItems = document.querySelectorAll('.reveal');
+  var motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function revealAll() {
+    revealItems.forEach(function (el) {
+      el.style.transitionDelay = '';
+      el.classList.add('in');
+    });
+  }
+
+  if (!('IntersectionObserver' in window) || motionQuery.matches) {
+    revealAll();
   } else {
+    var waves = new WeakMap();
+
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        var group = el.closest('[data-reveal-group]') || document.documentElement;
+        var now = (window.performance && performance.now) ? performance.now() : Date.now();
+        var wave = waves.get(group);
+
+        // Start a fresh wave when siblings arrive together; reset if the last
+        // one landed a while ago (e.g. slowly scrolling a stacked mobile list).
+        if (!wave || now - wave.last > WAVE_MS) wave = { n: 0, last: now };
+
+        el.style.transitionDelay = (Math.min(wave.n, STAGGER_MAX) * STAGGER_MS) + 'ms';
+        wave.n += 1;
+        wave.last = now;
+        waves.set(group, wave);
+
+        el.classList.add('in');
+        // Clear the delay once it has played so it can't affect later transitions.
+        el.addEventListener('transitionend', function handler() {
+          el.style.transitionDelay = '';
+          el.removeEventListener('transitionend', handler);
+        });
+
+        io.unobserve(el);   // once per element, never re-fires
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    items.forEach(function (el) { io.observe(el); });
+
+    revealItems.forEach(function (el) { io.observe(el); });
+
+    // Honour the setting if it is switched on mid-session.
+    var onMotionChange = function (e) { if (e.matches) { io.disconnect(); revealAll(); } };
+    if (motionQuery.addEventListener) motionQuery.addEventListener('change', onMotionChange);
+    else if (motionQuery.addListener) motionQuery.addListener(onMotionChange);
   }
 })();
 </script>
