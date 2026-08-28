@@ -3,145 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chef Kams — Professional Catering in Botswana</title>
-<meta name="description" content="Chef Kams elevates culinary experiences across Botswana — whole-cow spectacle roasts, corporate and private events, bush &amp; safari catering, and fine dining patisserie. You celebrate. We take care of the rest.">
+<title>Chef Kams — Premium Catering in Botswana</title>
+<meta name="description" content="Chef Kams elevates culinary experiences across Botswana — whole-cow spectacle roasts, corporate and private events, bush &amp; safari catering, and fine dining patisserie.">
 <meta name="theme-color" content="#fcf8f7">
-<link rel="canonical" href="./">
+<link rel="canonical" href="index.html">
 
-<!-- Open Graph / social. NOTE: replace these two with absolute URLs on your domain at deploy time. -->
+<!-- Open Graph / social. NOTE: replace og:image and og:url with absolute URLs on your domain at deploy time. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chef Kams">
-<meta property="og:title" content="Chef Kams — Elevating Culinary Experiences Across Botswana">
-<meta property="og:description" content="Whole-cow spectacle roasts, corporate &amp; private events, bush &amp; safari catering, and fine dining patisserie.">
+<meta property="og:url" content="index.html">
+<meta property="og:title" content="Chef Kams — Premium Catering in Botswana">
+<meta property="og:description" content="Chef Kams elevates culinary experiences across Botswana — whole-cow spectacle roasts, corporate and private events, bush &amp; safari catering, and fine dining patisserie.">
 <meta property="og:image" content="images/hero-fire-spit-bush.jpg">
 <meta property="og:image:width" content="2400">
 <meta property="og:image:height" content="950">
 <meta property="og:image:alt" content="A whole cow roasting over an open fire at a Chef Kams bush event">
 <meta property="og:locale" content="en_BW">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Chef Kams — Elevating Culinary Experiences Across Botswana">
-<meta name="twitter:description" content="Whole-cow spectacle roasts, corporate &amp; private events, bush &amp; safari catering, and fine dining patisserie.">
+<meta name="twitter:title" content="Chef Kams — Premium Catering in Botswana">
+<meta name="twitter:description" content="Chef Kams elevates culinary experiences across Botswana — whole-cow spectacle roasts, corporate and private events, bush &amp; safari catering, and fine dining patisserie.">
 <meta name="twitter:image" content="images/hero-fire-spit-bush.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-// Guarded so an unreachable CDN degrades quietly instead of throwing.
-window.tailwind = window.tailwind || {};
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        /* Premium Culinary Excellence — token set, verbatim */
-        "surface": "#fcf8f7", "surface-dim": "#ddd9d8", "surface-bright": "#fcf8f7",
-        "surface-container-lowest": "#ffffff", "surface-container-low": "#f6f3f2",
-        "surface-container": "#f1edec", "surface-container-high": "#ebe7e6",
-        "surface-container-highest": "#e5e2e1",
-        "on-surface": "#1c1b1b", "on-surface-variant": "#444845",
-        "inverse-surface": "#313030", "inverse-on-surface": "#f4f0ef",
-        "outline": "#747875", "outline-variant": "#c4c7c3", "surface-tint": "#5d5f5d",
-        "primary": "#5d5f5d", "on-primary": "#ffffff", "primary-container": "#fafaf7",
-        "on-primary-container": "#727371", "inverse-primary": "#c6c7c4",
-        "secondary": "#5d5f5b", "on-secondary": "#ffffff", "secondary-container": "#e0e0db",
-        "on-secondary-container": "#62635f",
-        "tertiary": "#615e5b", "on-tertiary": "#ffffff", "tertiary-container": "#fff9f5",
-        "on-tertiary-container": "#76726f",
-        "error": "#ba1a1a", "on-error": "#ffffff", "error-container": "#ffdad6",
-        "on-error-container": "#93000a",
-        "primary-fixed": "#e2e3e0", "primary-fixed-dim": "#c6c7c4",
-        "on-primary-fixed": "#1a1c1b", "on-primary-fixed-variant": "#454745",
-        "secondary-fixed": "#e3e3de", "secondary-fixed-dim": "#c6c7c2",
-        "on-secondary-fixed": "#1a1c19", "on-secondary-fixed-variant": "#464744",
-        "tertiary-fixed": "#e7e1de", "tertiary-fixed-dim": "#cbc5c2",
-        "on-tertiary-fixed": "#1d1b19", "on-tertiary-fixed-variant": "#494644",
-        "background": "#fcf8f7", "on-background": "#1c1b1b", "surface-variant": "#e5e2e1",
-        "accent-orange": "#E8722C"
-      },
-      borderRadius: { "sm": "0.5rem", "DEFAULT": "1rem", "md": "1.5rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
-      spacing: {
-        "unit": "8px", "gutter": "24px", "container-max": "1200px",
-        "margin-mobile": "20px", "margin-tablet": "32px", "margin-desktop": "64px"
-      },
-      maxWidth: { "container-max": "1200px" },
-      fontFamily: {
-        sans: ['"Plus Jakarta Sans"','system-ui','-apple-system','Segoe UI','Roboto','sans-serif'],
-        "display-lg": ['"Plus Jakarta Sans"'], "display-lg-mobile": ['"Plus Jakarta Sans"'],
-        "headline-md": ['"Plus Jakarta Sans"'], "headline-sm": ['"Plus Jakarta Sans"'],
-        "body-lg": ['"Plus Jakarta Sans"'], "body-md": ['"Plus Jakarta Sans"'],
-        "label-bold": ['"Plus Jakarta Sans"'], "label-md": ['"Plus Jakarta Sans"']
-      },
-      fontSize: {
-        "display-lg":        ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
-        "display-lg-mobile": ["36px", { lineHeight: "42px", letterSpacing: "-0.01em", fontWeight: "700" }],
-        "headline-md":       ["32px", { lineHeight: "40px", fontWeight: "600" }],
-        "headline-sm":       ["24px", { lineHeight: "32px", fontWeight: "600" }],
-        "body-lg":           ["18px", { lineHeight: "28px", fontWeight: "400" }],
-        "body-md":           ["16px", { lineHeight: "24px", fontWeight: "400" }],
-        "label-bold":        ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "700" }],
-        "label-md":          ["14px", { lineHeight: "20px", fontWeight: "500" }]
-      },
-      boxShadow: {
-        /* Large blur, low opacity, warm tint derived from the brand rather than pure black */
-        "ambient":    "0 20px 40px -10px rgba(74, 58, 48, 0.06)",
-        "ambient-lg": "0 28px 56px -12px rgba(74, 58, 48, 0.10)",
-        "accent":     "0 16px 32px -12px rgba(232, 114, 44, 0.38)"
-      }
-    }
-  }
-}
-</script>
-<style>
-  html { scroll-behavior: smooth; }
-  body { background-color: #fcf8f7; color: #1c1b1b; }
-  ::selection { background: #E8722C; color: #fff; }
-  :focus-visible { outline: 3px solid #E8722C; outline-offset: 3px; border-radius: 8px; }
-
-  /* Signature "cloche" / archway frame for hero and featured imagery */
-  .arched-frame { border-radius: 50% 50% 1rem 1rem / 10% 10% 1rem 1rem; }
-  @media (min-width: 768px) { .arched-frame { border-radius: 50% 50% 1rem 1rem / 20% 20% 1rem 1rem; } }
-
-  /* Progressive enhancement: hidden only while JS runs and motion is allowed. */
-  .js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; will-change: opacity, transform; }
-  .js .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .js .reveal, .js .reveal.in {
-      opacity: 1 !important; transform: none !important;
-      transition: none !important; transition-delay: 0ms !important;
-    }
-    *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
-  }
-  body.nav-open { overflow: hidden; }
-</style>
+<script src="assets/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/site.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="font-sans text-body-md text-on-surface antialiased overflow-x-hidden">
 
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[60] focus:top-4 focus:left-4 focus:bg-accent-orange focus:text-white focus:px-6 focus:py-3 focus:rounded-full focus:text-label-bold focus:uppercase">Skip to content</a>
 
-<!-- ============================ NAV ============================ -->
 <header class="sticky top-0 z-50 w-full bg-surface/80 backdrop-blur-md border-b border-outline-variant/25">
   <div class="mx-auto flex max-w-container-max items-center justify-between px-margin-mobile md:px-margin-desktop py-4">
 
-    <a href="#top" class="text-display-lg-mobile font-bold tracking-tight text-on-surface" aria-label="Chef Kams — home">Chef Kams</a>
+    <a href="index.html" class="text-headline-md md:text-display-lg-mobile font-bold tracking-tight text-on-surface" aria-label="Chef Kams — home">Chef Kams</a>
 
-    <nav class="hidden md:flex items-center space-x-gutter" aria-label="Primary">
-      <a href="#services" class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Services</a>
-      <a href="#bush"     class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Bush &amp; Safari</a>
-      <a href="#gallery"  class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Gallery</a>
-      <a href="#about"    class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">About</a>
-      <a href="#contact"  class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Contact</a>
+    <nav class="hidden lg:flex items-center space-x-gutter" aria-label="Primary">
+      <a href="index.html" aria-current="page" class="text-label-bold uppercase tracking-wider text-accent-orange transition-colors">Home</a>
+      <a href="services.html" class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Services</a>
+      <a href="bush-safari.html" class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Bush &amp; Safari</a>
+      <a href="gallery.html" class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Gallery</a>
+      <a href="about.html" class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">About</a>
+      <a href="contact.html" class="text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-accent-orange transition-colors">Contact</a>
     </nav>
 
     <a href="mailto:osekile52@gmail.com?subject=Event%20Booking%20Enquiry%20%E2%80%94%20Chef%20Kams&body=Hi%20Chef%20Kams%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20catering.%0D%0A%0D%0AEvent%20type%3A%20%0D%0ADate%3A%20%0D%0AGuests%3A%20%0D%0ALocation%3A%20%0D%0A%0D%0AThank%20you."
-       class="hidden md:inline-flex items-center justify-center rounded-full bg-accent-orange px-6 py-3 text-label-bold uppercase tracking-wider text-white shadow-accent hover:opacity-90 transition-opacity">
+       class="hidden lg:inline-flex items-center justify-center rounded-full bg-accent-orange px-6 py-3 text-label-bold uppercase tracking-wider text-white shadow-accent hover:opacity-90 transition-opacity">
       Book Now
     </a>
 
     <button id="nav-toggle" type="button"
-            class="md:hidden relative z-50 grid h-11 w-11 -mr-2 place-items-center rounded-full text-on-surface hover:bg-surface-container transition-colors"
+            class="lg:hidden relative z-50 grid h-11 w-11 -mr-2 place-items-center rounded-full text-on-surface hover:bg-surface-container transition-colors"
             aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
       <span class="sr-only">Toggle navigation</span>
       <span aria-hidden="true" class="block w-6">
@@ -152,17 +67,18 @@ tailwind.config = {
     </button>
   </div>
 
-  <div id="mobile-nav" hidden class="md:hidden fixed inset-0 z-40 bg-surface opacity-0 transition-opacity duration-300">
+  <div id="mobile-nav" hidden class="lg:hidden fixed inset-0 z-40 bg-surface opacity-0 transition-opacity duration-300">
     <div class="flex h-full flex-col justify-center px-margin-mobile">
       <nav class="flex flex-col" aria-label="Mobile">
-        <a href="#services" data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Services</a>
-        <a href="#bush"     data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Bush &amp; Safari</a>
-        <a href="#gallery"  data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Gallery</a>
-        <a href="#about"    data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">About</a>
-        <a href="#contact"  data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Contact</a>
+        <a href="index.html" aria-current="page" data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-accent-orange">Home</a>
+        <a href="services.html" data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Services</a>
+        <a href="bush-safari.html" data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Bush &amp; Safari</a>
+        <a href="gallery.html" data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Gallery</a>
+        <a href="about.html" data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">About</a>
+        <a href="contact.html" data-nav-link class="border-b border-outline-variant/40 py-5 text-headline-sm text-on-surface">Contact</a>
       </nav>
       <div class="mt-10 flex flex-col gap-4">
-        <a href="mailto:osekile52@gmail.com?subject=Event%20Booking%20Enquiry%20%E2%80%94%20Chef%20Kams" data-nav-link
+        <a href="mailto:osekile52@gmail.com?subject=Event%20Booking%20Enquiry%20%E2%80%94%20Chef%20Kams&body=Hi%20Chef%20Kams%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20catering.%0D%0A%0D%0AEvent%20type%3A%20%0D%0ADate%3A%20%0D%0AGuests%3A%20%0D%0ALocation%3A%20%0D%0A%0D%0AThank%20you." data-nav-link
            class="rounded-full bg-accent-orange px-8 py-4 text-center text-label-bold uppercase tracking-wider text-white shadow-accent">Book Your Event</a>
         <a href="tel:+26774537995" data-nav-link
            class="rounded-full border-2 border-on-surface px-8 py-4 text-center text-label-bold uppercase tracking-wider text-on-surface">Call +267 74537995</a>
@@ -172,12 +88,9 @@ tailwind.config = {
 </header>
 
 <main id="main">
-<span id="top"></span>
 
-<!-- ============================ HERO ============================ -->
 <section class="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop pt-12 md:pt-24 pb-20 md:pb-32">
   <div class="grid grid-cols-1 items-center gap-gutter md:grid-cols-12">
-
     <div class="md:col-span-6 space-y-8">
       <h1 class="text-display-lg-mobile md:text-display-lg font-bold leading-tight text-on-surface">
         Elevating Culinary Experiences Across Botswana.
@@ -186,49 +99,30 @@ tailwind.config = {
         From whole-cow spectacle roasts to fine-dining patisserie and bush safari catering,
         we bring world-class flavour to your events.
       </p>
-
       <div class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-        <a href="mailto:osekile52@gmail.com?subject=Event%20Booking%20Enquiry%20%E2%80%94%20Chef%20Kams&body=Hi%20Chef%20Kams%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20catering.%0D%0A%0D%0AEvent%20type%3A%20%0D%0ADate%3A%20%0D%0AGuests%3A%20%0D%0ALocation%3A%20%0D%0A%0D%0AThank%20you."
-           class="w-full sm:w-auto rounded-full bg-accent-orange px-8 py-4 text-center text-label-bold uppercase tracking-wider text-white shadow-accent hover:opacity-90 transition-opacity">
-          Book Your Event
-        </a>
-        <a href="#gallery"
-           class="flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border-2 border-outline px-8 py-4 text-label-bold uppercase tracking-wider text-on-surface hover:bg-surface-variant transition-colors">
-          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5v-7Z" fill="currentColor" stroke="none"/>
-          </svg>
+        <a href="mailto:osekile52@gmail.com?subject=Event%20Booking%20Enquiry%20%E2%80%94%20Chef%20Kams&body=Hi%20Chef%20Kams%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20catering.%0D%0A%0D%0AEvent%20type%3A%20%0D%0ADate%3A%20%0D%0AGuests%3A%20%0D%0ALocation%3A%20%0D%0A%0D%0AThank%20you." class="w-full sm:w-auto rounded-full bg-accent-orange px-8 py-4 text-center text-label-bold uppercase tracking-wider text-white shadow-accent hover:opacity-90 transition-opacity">Book Your Event</a>
+        <a href="gallery.html" class="flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border-2 border-outline px-8 py-4 text-label-bold uppercase tracking-wider text-on-surface hover:bg-surface-variant transition-colors">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5v-7Z" fill="currentColor" stroke="none"/></svg>
           See The Work
         </a>
       </div>
 
-      <!-- Brand pillars, styled with the design system's accent "stat" treatment.
+      <!-- Brand pillars, using the design system's accent "stat" treatment.
            NOTE: the reference mock showed "10+ Years Experience" / "500+ Events Catered".
-           Those figures were placeholders, so they are deliberately not published here.
+           Those were placeholder figures, so they are deliberately not published.
            Send real numbers and they drop straight into this row. -->
       <dl data-reveal-group class="flex flex-wrap gap-x-10 gap-y-6 border-t border-outline-variant/30 pt-8">
-        <div class="reveal">
-          <dt class="sr-only">Meat preparation</dt>
-          <dd class="text-headline-md font-bold text-accent-orange">Local Meat</dd>
-          <p class="mt-1 text-label-md text-on-surface-variant">Sourced &amp; grilled</p>
-        </div>
-        <div class="reveal">
-          <dt class="sr-only">In-house technique</dt>
-          <dd class="text-headline-md font-bold text-accent-orange">Smoked</dd>
-          <p class="mt-1 text-label-md text-on-surface-variant">Low &amp; slow</p>
-        </div>
-        <div class="reveal">
-          <dt class="sr-only">In-house technique</dt>
-          <dd class="text-headline-md font-bold text-accent-orange">Cured</dd>
-          <p class="mt-1 text-label-md text-on-surface-variant">Made in-house</p>
-        </div>
+        <div class="reveal"><dt class="sr-only">Meat preparation</dt><dd class="text-headline-md font-bold text-accent-orange">Local Meat</dd><p class="mt-1 text-label-md text-on-surface-variant">Sourced &amp; grilled</p></div>
+        <div class="reveal"><dt class="sr-only">In-house technique</dt><dd class="text-headline-md font-bold text-accent-orange">Smoked</dd><p class="mt-1 text-label-md text-on-surface-variant">Low &amp; slow</p></div>
+        <div class="reveal"><dt class="sr-only">In-house technique</dt><dd class="text-headline-md font-bold text-accent-orange">Cured</dd><p class="mt-1 text-label-md text-on-surface-variant">Made in-house</p></div>
       </dl>
     </div>
 
     <div class="relative mt-12 md:col-span-5 md:col-start-8 md:mt-0">
       <div class="arched-frame relative aspect-[3/4] w-full overflow-hidden bg-surface-variant shadow-ambient-lg">
-        <img src="images/chef-kams-bush-dessert-service.jpg" width="810" height="1080"
+        <img src="images/chef-kams-bush-dessert-service.jpg" width="810" height="1080" fetchpriority="high" decoding="async"
              alt="Chef Kams in chef's whites presenting a tiered dessert service outdoors in the Botswana bush"
-             class="h-full w-full object-cover" fetchpriority="high" decoding="async">
+             class="h-full w-full object-cover">
       </div>
       <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:-left-6 flex items-center gap-3 whitespace-nowrap rounded-full bg-surface-container-lowest px-6 py-4 shadow-ambient-lg">
         <span class="h-3 w-3 shrink-0 rounded-full bg-accent-orange animate-pulse" aria-hidden="true"></span>
@@ -238,341 +132,160 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ======================= TRUST STRIP ======================= -->
 <section class="border-y border-outline-variant/20 bg-surface-container-lowest py-12" aria-labelledby="trust-h">
   <div class="mx-auto flex max-w-container-max flex-col items-center gap-10 px-margin-mobile md:px-margin-desktop lg:flex-row lg:gap-12">
-
     <div class="flex shrink-0 items-center gap-4">
       <span class="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-surface-container-high text-accent-orange" aria-hidden="true">
         <svg viewBox="0 0 24 24" class="h-8 w-8" fill="currentColor"><path d="M12 1.5l2.6 2.1 3.3-.4 1 3.2 2.9 1.6-1.3 3.1 1.3 3.1-2.9 1.6-1 3.2-3.3-.4L12 22.5 9.4 20.4l-3.3.4-1-3.2-2.9-1.6L3.5 13 2.2 9.9l2.9-1.6 1-3.2 3.3.4L12 1.5Zm-1.1 13.9l5.6-5.6-1.5-1.5-4.1 4.1-1.9-1.9-1.5 1.5 3.4 3.4Z"/></svg>
       </span>
       <h2 id="trust-h" class="max-w-[140px] text-headline-sm leading-tight text-on-surface">Trusted Local Catering</h2>
     </div>
-
     <ul data-reveal-group class="grid w-full grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2">
-      <li class="reveal flex items-center gap-4">
-        <img src="images/slow-cooked-meat-platters.jpg" width="1350" height="1800" loading="lazy" decoding="async"
-             alt="Trays of slow-cooked meat prepared for a Chef Kams event"
-             class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient">
-        <div>
-          <h3 class="text-label-bold uppercase tracking-wider text-on-surface">Whole Cow Spectacle Spit</h3>
-          <p class="mt-1 text-body-md text-on-surface-variant">Roasted, slow-cooked, legendary</p>
-        </div>
-      </li>
-      <li class="reveal flex items-center gap-4">
-        <img src="images/plated-dessert-red-glaze.jpg" width="1840" height="4096" loading="lazy" decoding="async"
-             alt="A red-glazed berry mousse entremet plated with a cream quenelle"
-             class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient">
-        <div>
-          <h3 class="text-label-bold uppercase tracking-wider text-on-surface">Berry Mousse Cake</h3>
-          <p class="mt-1 text-body-md text-on-surface-variant">Mascarpone, berry coulis</p>
-        </div>
-      </li>
-      <li class="reveal flex items-center gap-4">
-        <img src="images/bush-fire-cooking-pots.jpg" width="1197" height="1432" loading="lazy" decoding="async"
-             alt="Pans cooking over an open bush fire at a Chef Kams safari breakfast"
-             class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient">
-        <div>
-          <h3 class="text-label-bold uppercase tracking-wider text-on-surface">Open-Fire Bush Kitchen</h3>
-          <p class="mt-1 text-body-md text-on-surface-variant">Cooked on coals, in camp</p>
-        </div>
-      </li>
-      <li class="reveal flex items-center gap-4">
-        <img src="images/fine-dining-hasselback.jpg" width="810" height="1080" loading="lazy" decoding="async"
-             alt="A fine-dining plate of hasselback potato with glazed terrine"
-             class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient">
-        <div>
-          <h3 class="text-label-bold uppercase tracking-wider text-on-surface">Plated Fine Dining</h3>
-          <p class="mt-1 text-body-md text-on-surface-variant">Restaurant standards, anywhere</p>
-        </div>
-      </li>
+      <li class="reveal flex items-center gap-4"><img src="images/slow-cooked-meat-platters.jpg" width="1350" height="1800" loading="lazy" decoding="async" alt="Trays of slow-cooked meat prepared for a Chef Kams event" class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient"><div><h3 class="text-label-bold uppercase tracking-wider text-on-surface">Whole Cow Spectacle Spit</h3><p class="mt-1 text-body-md text-on-surface-variant">Roasted, slow-cooked, legendary</p></div></li>
+      <li class="reveal flex items-center gap-4"><img src="images/plated-dessert-red-glaze.jpg" width="1840" height="4096" loading="lazy" decoding="async" alt="A red-glazed berry mousse entremet plated with a cream quenelle" class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient"><div><h3 class="text-label-bold uppercase tracking-wider text-on-surface">Berry Mousse Cake</h3><p class="mt-1 text-body-md text-on-surface-variant">Mascarpone, berry coulis</p></div></li>
+      <li class="reveal flex items-center gap-4"><img src="images/bush-fire-cooking-pots.jpg" width="1197" height="1432" loading="lazy" decoding="async" alt="Pans cooking over an open bush fire at a Chef Kams safari breakfast" class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient"><div><h3 class="text-label-bold uppercase tracking-wider text-on-surface">Open-Fire Bush Kitchen</h3><p class="mt-1 text-body-md text-on-surface-variant">Cooked on coals, in camp</p></div></li>
+      <li class="reveal flex items-center gap-4"><img src="images/fine-dining-hasselback.jpg" width="810" height="1080" loading="lazy" decoding="async" alt="A fine-dining plate of hasselback potato with glazed terrine" class="h-20 w-20 shrink-0 rounded-full border-4 border-white object-cover shadow-ambient"><div><h3 class="text-label-bold uppercase tracking-wider text-on-surface">Plated Fine Dining</h3><p class="mt-1 text-body-md text-on-surface-variant">Restaurant standards, anywhere</p></div></li>
     </ul>
   </div>
 </section>
 
-<!-- ========================= SERVICES ========================= -->
-<section id="services" class="scroll-mt-24 bg-surface-container py-20 md:py-32 lg:py-40">
+<section class="bg-surface-container py-20 md:py-32">
   <div class="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop">
     <div class="mb-16 text-center">
       <h2 class="text-headline-md text-on-surface">Our Signature Services</h2>
       <p class="mx-auto mt-4 max-w-2xl text-body-lg text-on-surface-variant">Tailored culinary experiences designed for impact and flavour.</p>
     </div>
-
     <div data-reveal-group class="grid grid-cols-1 gap-gutter md:grid-cols-2 lg:grid-cols-4">
-
-      <article class="reveal rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
-        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M12 2s5 4.5 5 9a5 5 0 0 1-10 0c0-1.6.6-3.1 1.4-4.4.3 1 .9 1.9 1.7 2.4 0-2.6 1-5.4 1.9-7Zm0 18a7 7 0 0 0 7-7h2a9 9 0 0 1-18 0h2a7 7 0 0 0 7 7Z"/></svg>
-        </span>
+      <a href="services.html" class="reveal block rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
+        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M12 2s5 4.5 5 9a5 5 0 0 1-10 0c0-1.6.6-3.1 1.4-4.4.3 1 .9 1.9 1.7 2.4 0-2.6 1-5.4 1.9-7Zm0 18a7 7 0 0 0 7-7h2a9 9 0 0 1-18 0h2a7 7 0 0 0 7 7Z"/></svg></span>
         <h3 class="mb-3 text-headline-sm text-on-surface">Whole Cow Spectacle Spit</h3>
         <p class="text-body-md text-on-surface-variant">A majestic centrepiece for large gatherings, slow-roasted to perfection.</p>
-      </article>
-
-      <article class="reveal rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
-        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.5.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM9 13c-3.3 0-6 1.8-6 4v2h12v-2c0-2.2-2.7-4-6-4Zm7.5.5c-.9 0-1.7.1-2.4.4 1.2.9 1.9 2.1 1.9 3.6V19h6v-1.5c0-2-2.5-3.5-5.5-3.5Z"/></svg>
-        </span>
+      </a>
+      <a href="services.html" class="reveal block rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
+        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.5.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM9 13c-3.3 0-6 1.8-6 4v2h12v-2c0-2.2-2.7-4-6-4Zm7.5.5c-.9 0-1.7.1-2.4.4 1.2.9 1.9 2.1 1.9 3.6V19h6v-1.5c0-2-2.5-3.5-5.5-3.5Z"/></svg></span>
         <h3 class="mb-3 text-headline-sm text-on-surface">Corporate &amp; Private Events</h3>
         <p class="text-body-md text-on-surface-variant">Impeccable service and diverse menus for professional and personal milestones.</p>
-      </article>
-
-      <article class="reveal rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
-        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M3 19l5.5-8 3.5 5 2.5-3.5L21 19H3Zm14.5-9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
-        </span>
+      </a>
+      <a href="services.html" class="reveal block rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
+        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M3 19l5.5-8 3.5 5 2.5-3.5L21 19H3Zm14.5-9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg></span>
         <h3 class="mb-3 text-headline-sm text-on-surface">Bush &amp; Safari Catering</h3>
         <p class="text-body-md text-on-surface-variant">Bringing luxury dining to the wild heart of Botswana's stunning landscapes.</p>
-      </article>
-
-      <article class="reveal rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
-        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true">
-          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M12 6a2 2 0 0 0 2-2c0-1.1-2-4-2-4S10 2.9 10 4a2 2 0 0 0 2 2Zm-7 5h14a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3Zm-1 2v2c1.1 0 1.5 1 3 1s1.9-1 3-1 1.5 1 3 1 1.9-1 3-1 1.5 1 3 1v-2H4Zm0 5v2h16v-2c-1.1 0-1.5-1-3-1s-1.9 1-3 1-1.5-1-3-1-1.9 1-3 1-1.5-1-3-1Z"/></svg>
-        </span>
+      </a>
+      <a href="services.html" class="reveal block rounded-md bg-surface-container-lowest p-8 shadow-ambient transition-transform duration-300 hover:-translate-y-2 hover:shadow-ambient-lg">
+        <span class="mb-6 grid h-12 w-12 place-items-center rounded-full bg-tertiary-container text-accent-orange" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M12 6a2 2 0 0 0 2-2c0-1.1-2-4-2-4S10 2.9 10 4a2 2 0 0 0 2 2Zm-7 5h14a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3Zm-1 2v2c1.1 0 1.5 1 3 1s1.9-1 3-1 1.5 1 3 1 1.9-1 3-1 1.5 1 3 1v-2H4Zm0 5v2h16v-2c-1.1 0-1.5-1-3-1s-1.9 1-3 1-1.5-1-3-1-1.9 1-3 1-1.5-1-3-1Z"/></svg></span>
         <h3 class="mb-3 text-headline-sm text-on-surface">Fine Dining &amp; Patisserie</h3>
         <p class="text-body-md text-on-surface-variant">Exquisite plated courses and delicate desserts crafted with artistry.</p>
-      </article>
-
+      </a>
+    </div>
+    <div class="mt-12 text-center">
+      <a href="services.html" class="inline-flex rounded-full border-2 border-on-surface px-8 py-4 text-label-bold uppercase tracking-wider text-on-surface hover:bg-surface-variant transition-colors">All services</a>
     </div>
   </div>
 </section>
 
-<!-- ==================== BUSH & SAFARI + VIDEO ==================== -->
-<section id="bush" class="scroll-mt-24 py-20 md:py-32 lg:py-40">
+<section class="py-20 md:py-32">
   <div class="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop">
     <div class="grid grid-cols-1 items-center gap-gutter md:grid-cols-12 md:gap-16">
-
       <div class="md:col-span-5">
-        <h2 class="text-headline-md text-on-surface">No road? No problem.</h2>
-        <p class="mt-4 text-body-lg text-on-surface-variant">
-          We have cooked three-course menus on coals with no power, no running water and no
-          walls — and plated them like a dining room. Camps, lodges, private concessions and
-          bush weddings across Botswana.
-        </p>
-        <ul class="mt-8 space-y-4">
-          <li class="flex gap-3 text-body-md text-on-surface-variant"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent-orange" aria-hidden="true"></span>Full mobile kitchen, crew and service staff</li>
-          <li class="flex gap-3 text-body-md text-on-surface-variant"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent-orange" aria-hidden="true"></span>Open-fire, potjie and spit cooking on site</li>
-          <li class="flex gap-3 text-body-md text-on-surface-variant"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent-orange" aria-hidden="true"></span>Dietary requirements handled in advance</li>
-          <li class="flex gap-3 text-body-md text-on-surface-variant"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent-orange" aria-hidden="true"></span>Plated desserts and patisserie, in the bush</li>
-        </ul>
-        <a href="mailto:osekile52@gmail.com?subject=Bush%20%26%20Safari%20Catering%20Enquiry%20%E2%80%94%20Chef%20Kams&body=Hi%20Chef%20Kams%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20bush%20catering.%0D%0A%0D%0ACamp%20%2F%20location%3A%20%0D%0ADates%3A%20%0D%0AGuests%3A%20%0D%0A%0D%0AThank%20you."
-           class="mt-10 inline-flex rounded-full border-2 border-on-surface px-8 py-4 text-label-bold uppercase tracking-wider text-on-surface hover:bg-surface-variant transition-colors">
-          Plan a bush event
-        </a>
+        <p class="text-label-bold uppercase tracking-wider text-accent-orange">Bush &amp; Safari</p>
+        <h2 class="mt-4 text-headline-md text-on-surface">No road? No problem.</h2>
+        <p class="mt-4 text-body-lg text-on-surface-variant">We have cooked three-course menus on coals with no power, no running water and no walls — and plated them like a dining room.</p>
+        <a href="bush-safari.html" class="mt-8 inline-flex rounded-full border-2 border-on-surface px-8 py-4 text-label-bold uppercase tracking-wider text-on-surface hover:bg-surface-variant transition-colors">Explore bush catering</a>
       </div>
-
-      <figure class="reveal md:col-span-7">
-        <div class="overflow-hidden rounded-md bg-surface-container shadow-ambient-lg">
-          <video class="block h-auto w-full" controls muted playsinline preload="metadata"
-                 poster="images/bush-fire-cooking-pots.jpg" width="768" height="576">
-            <source src="videos/chef-kams-clip.mp4" type="video/mp4">
-            <p class="p-6 text-body-md text-on-surface-variant">
-              Your browser can't play this video.
-              <a class="text-accent-orange underline" href="videos/chef-kams-clip.mp4">Download the clip</a> instead.
-            </p>
-          </video>
+      <div class="reveal md:col-span-7">
+        <div class="overflow-hidden rounded-md shadow-ambient-lg">
+          <img src="images/bush-fire-cooking-pots.jpg" width="1197" height="1432" loading="lazy" decoding="async" alt="Pans of eggs, tomato and boerewors cooking over an open bush fire" class="h-72 w-full object-cover md:h-96">
         </div>
-        <figcaption class="mt-4 text-label-md text-on-surface-variant">From the fire — Chef Kams cooking on location. Press play for sound.</figcaption>
-      </figure>
-
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ========================== GALLERY ========================== -->
-<section id="gallery" class="scroll-mt-24 bg-surface-container py-20 md:py-32 lg:py-40">
+<section class="bg-surface-container py-20 md:py-32">
   <div class="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop">
     <div class="mb-12 flex flex-wrap items-end justify-between gap-6">
       <h2 class="text-headline-md text-on-surface">A Taste of Our Work</h2>
-      <p class="max-w-sm text-body-md text-on-surface-variant">Real service, real events. Select an image to view it larger.</p>
+      <a href="gallery.html" class="text-label-bold uppercase tracking-wider text-accent-orange hover:opacity-80 transition-opacity">View full gallery</a>
     </div>
-
-    <ul id="gallery-grid" data-reveal-group class="grid grid-cols-1 gap-gutter md:grid-cols-12">
-
+    <ul data-gallery-grid data-reveal-group class="grid grid-cols-1 gap-gutter md:grid-cols-12">
       <li class="reveal md:col-span-7">
-        <button type="button" class="group relative block h-80 w-full overflow-hidden rounded-md shadow-ambient md:h-96"
+        <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-96"
                 data-full="images/hero-fire-spit-bush.jpg" data-caption="Legendary whole-cow roasts over an open fire">
-          <img src="images/hero-fire-spit-bush.jpg" width="2400" height="950" loading="lazy" decoding="async"
-               alt="A whole cow roasting on an open-fire spit at a Chef Kams bush event"
+          <img src="images/hero-fire-spit-bush.jpg" width="2400" height="950" loading="lazy" decoding="async" alt="A whole cow roasting on an open-fire spit at a Chef Kams bush event"
                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
           <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
             <span class="text-headline-sm text-white">Legendary Whole-Cow Roasts</span>
           </span>
         </button>
       </li>
-
       <li class="reveal md:col-span-5">
-        <button type="button" class="group relative block h-80 w-full overflow-hidden rounded-md shadow-ambient md:h-96"
+        <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-96"
                 data-full="images/safari-tent-camp.jpg" data-caption="Off-grid bush and safari catering">
-          <img src="images/safari-tent-camp.jpg" width="1350" height="1800" loading="lazy" decoding="async"
-               alt="A safari tent at a bush camp catered by Chef Kams"
+          <img src="images/safari-tent-camp.jpg" width="1350" height="1800" loading="lazy" decoding="async" alt="A safari tent at a bush camp catered by Chef Kams"
                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
           <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
-            <span class="text-headline-sm text-white">Off-grid Bush &amp; Safari Catering</span>
+            <span class="text-headline-sm text-white">Off-grid Bush &amp; Safari</span>
           </span>
         </button>
       </li>
-
       <li class="reveal md:col-span-4">
         <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-80"
                 data-full="images/patisserie-choux-cream.jpg" data-caption="Choux pastry with cream and fresh fruit">
-          <img src="images/patisserie-choux-cream.jpg" width="718" height="1600" loading="lazy" decoding="async"
-               alt="Choux pastry topped with piped cream and fresh fruit"
+          <img src="images/patisserie-choux-cream.jpg" width="718" height="1600" loading="lazy" decoding="async" alt="Choux pastry topped with piped cream and fresh fruit"
                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
           <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
             <span class="text-headline-sm text-white">Gourmet Patisserie</span>
           </span>
         </button>
       </li>
-
       <li class="reveal md:col-span-8">
         <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-80"
                 data-full="images/chefs-plating-team.jpg" data-caption="The Chef Kams team plating during service">
-          <img src="images/chefs-plating-team.jpg" width="809" height="1800" loading="lazy" decoding="async"
-               alt="The Chef Kams kitchen team plating a course during service"
-               class="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105">
+          <img src="images/chefs-plating-team.jpg" width="809" height="1800" loading="lazy" decoding="async" alt="The Chef Kams kitchen team plating a course during service"
+               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
           <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
             <span class="text-headline-sm text-white">Premium Plated Service</span>
           </span>
         </button>
       </li>
-
-      <li class="reveal md:col-span-8">
-        <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-80"
-                data-full="images/bush-fire-cooking-pots.jpg" data-caption="A bush breakfast cooked over open coals">
-          <img src="images/bush-fire-cooking-pots.jpg" width="1197" height="1432" loading="lazy" decoding="async"
-               alt="Pans of eggs, tomato and boerewors cooking over an open bush fire"
-               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
-          <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
-            <span class="text-headline-sm text-white">Open-Fire Bush Kitchen</span>
-          </span>
-        </button>
-      </li>
-
-      <li class="reveal md:col-span-4">
-        <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-80"
-                data-full="images/red-velvet-cake.jpg" data-caption="Red velvet layer cake">
-          <img src="images/red-velvet-cake.jpg" width="718" height="1600" loading="lazy" decoding="async"
-               alt="Red velvet layer cake finished with cream and sponge crumb"
-               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
-          <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
-            <span class="text-headline-sm text-white">Celebration Cakes</span>
-          </span>
-        </button>
-      </li>
-
-      <li class="reveal md:col-span-5">
-        <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-80"
-                data-full="images/fine-dining-hasselback.jpg" data-caption="Hasselback potato with glazed terrine">
-          <img src="images/fine-dining-hasselback.jpg" width="810" height="1080" loading="lazy" decoding="async"
-               alt="Fine-dining plate of hasselback potato with a glazed terrine and jus"
-               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
-          <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
-            <span class="text-headline-sm text-white">Fine Dining Plates</span>
-          </span>
-        </button>
-      </li>
-
-      <li class="reveal md:col-span-7">
-        <button type="button" class="group relative block h-72 w-full overflow-hidden rounded-md shadow-ambient md:h-80"
-                data-full="images/buffet-spread-outdoor.jpg" data-caption="An outdoor buffet spread at a corporate event">
-          <img src="images/buffet-spread-outdoor.jpg" width="1350" height="1800" loading="lazy" decoding="async"
-               alt="An outdoor buffet spread of salads, hot dishes and fresh fruit at a corporate event"
-               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
-          <span class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
-            <span class="text-headline-sm text-white">Corporate Event Buffets</span>
-          </span>
-        </button>
-      </li>
-
     </ul>
   </div>
 </section>
 
-<!-- =========================== ABOUT =========================== -->
-<section id="about" class="scroll-mt-24 py-20 md:py-32 lg:py-40">
-  <div class="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop">
-    <div class="grid grid-cols-1 items-center gap-gutter md:grid-cols-12 md:gap-16">
-
-      <div class="reveal md:col-span-5">
-        <div class="overflow-hidden rounded-md shadow-ambient-lg">
-          <img src="images/kitchen-team-prep.jpg" width="1080" height="1071" loading="lazy" decoding="async"
-               alt="The Chef Kams team preparing components together in the kitchen"
-               class="h-full w-full object-cover">
-        </div>
-      </div>
-
-      <div class="md:col-span-6 md:col-start-7">
-        <h2 class="text-headline-md text-on-surface">Food · People · Memories</h2>
-        <p class="mt-4 text-body-lg text-on-surface-variant">
-          Chef Kams is a Botswana catering team built on one idea — great food brings people
-          together. We cook local meat over fire, smoke and cure in-house, and finish with
-          patisserie made from scratch.
-        </p>
-        <p class="mt-4 text-body-md text-on-surface-variant">
-          Whether it's a company year-end for hundreds or a private dinner for eight in a
-          concession three hours from tar, the standard doesn't move.
-        </p>
-        <p class="mt-8 text-headline-sm text-accent-orange">Exceptional food. Unforgettable experiences.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========================== CONTACT ========================== -->
-<section id="contact" class="scroll-mt-24 rounded-t-xl bg-on-surface py-24 md:py-32">
-  <div class="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop text-center">
-    <h2 class="mx-auto mb-12 max-w-3xl text-display-lg-mobile md:text-display-lg font-bold text-white">
-      You celebrate.<br>We take care of the rest.
-    </h2>
-
-    <div class="mb-16 flex flex-col items-center justify-center gap-6 sm:flex-row">
-      <a href="mailto:osekile52@gmail.com?subject=Event%20Booking%20Enquiry%20%E2%80%94%20Chef%20Kams&body=Hi%20Chef%20Kams%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20catering.%0D%0A%0D%0AEvent%20type%3A%20%0D%0ADate%3A%20%0D%0AGuests%3A%20%0D%0ALocation%3A%20%0D%0A%0D%0AThank%20you."
-         class="w-full sm:w-auto rounded-full bg-accent-orange px-10 py-4 text-label-bold uppercase tracking-wider text-white shadow-accent hover:opacity-90 transition-opacity">
-        Email Us
-      </a>
-      <a href="tel:+26774537995"
-         class="w-full sm:w-auto rounded-full border-2 border-outline-variant px-10 py-4 text-label-bold uppercase tracking-wider text-white hover:bg-white/10 transition-colors">
-        Call Us
-      </a>
-      <a href="https://wa.me/26774537995?text=Hi%20Chef%20Kams%2C%20I%27d%20like%20to%20enquire%20about%20catering."
-         target="_blank" rel="noopener"
-         class="w-full sm:w-auto rounded-full border-2 border-outline-variant px-10 py-4 text-label-bold uppercase tracking-wider text-white hover:bg-white/10 transition-colors">
-        WhatsApp
-      </a>
-    </div>
-
-    <div class="flex flex-col items-center justify-center gap-8 text-surface-variant md:flex-row md:gap-12">
-      <a href="tel:+26774537995" class="flex items-center gap-3 hover:text-white transition-colors">
-        <svg viewBox="0 0 24 24" class="h-6 w-6 text-accent-orange" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4Z"/></svg>
-        <span class="text-body-lg">+267 74537995</span>
-      </a>
-      <a href="mailto:osekile52@gmail.com" class="flex items-center gap-3 hover:text-white transition-colors">
-        <svg viewBox="0 0 24 24" class="h-6 w-6 text-accent-orange" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
-        <span class="text-body-lg">osekile52@gmail.com</span>
-      </a>
+<section class="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop pb-20 md:pb-32">
+  <div class="rounded-md bg-on-surface px-6 py-16 text-center shadow-ambient-lg md:px-16 md:py-20">
+    <h2 class="mx-auto max-w-2xl text-display-lg-mobile font-bold text-white">You celebrate.<br>We take care of the rest.</h2>
+    <p class="mx-auto mt-5 max-w-xl text-body-lg text-surface-variant">Tell us the date, the headcount and where you're gathering — we'll come back with a menu and a quote.</p>
+    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="mailto:osekile52@gmail.com?subject=Event%20Booking%20Enquiry%20%E2%80%94%20Chef%20Kams&body=Hi%20Chef%20Kams%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20catering.%0D%0A%0D%0AEvent%20type%3A%20%0D%0ADate%3A%20%0D%0AGuests%3A%20%0D%0ALocation%3A%20%0D%0A%0D%0AThank%20you." class="w-full sm:w-auto rounded-full bg-accent-orange px-10 py-4 text-label-bold uppercase tracking-wider text-white shadow-accent hover:opacity-90 transition-opacity">Book Your Event</a>
+      <a href="contact.html" class="w-full sm:w-auto rounded-full border-2 border-outline-variant px-10 py-4 text-label-bold uppercase tracking-wider text-white hover:bg-white/10 transition-colors">Contact Us</a>
     </div>
   </div>
 </section>
 </main>
 
-<!-- =========================== FOOTER =========================== -->
 <footer class="w-full bg-inverse-surface">
   <div class="mx-auto flex max-w-container-max flex-col items-center justify-between gap-6 px-margin-mobile md:px-margin-desktop py-12 md:flex-row">
-    <p class="text-display-lg-mobile font-bold tracking-tight text-inverse-on-surface">Chef Kams</p>
-    <p class="text-center text-body-md text-surface-variant md:text-left">
+    <a href="index.html" class="shrink-0 whitespace-nowrap text-headline-md font-bold tracking-tight text-inverse-on-surface">Chef Kams</a>
+    <p class="max-w-sm text-center text-body-md text-surface-variant md:text-left">
       &copy; <span id="year">2026</span> Chef Kams. Premium catering services, Botswana.
     </p>
-    <nav class="flex flex-wrap justify-center gap-6" aria-label="Footer">
-      <a href="#services" class="text-body-md text-surface-variant hover:text-accent-orange transition-colors">Services</a>
-      <a href="#gallery" class="text-body-md text-surface-variant hover:text-accent-orange transition-colors">Gallery</a>
-      <a href="#about" class="text-body-md text-surface-variant hover:text-accent-orange transition-colors">About</a>
-      <a href="#contact" class="text-body-md text-surface-variant hover:text-accent-orange transition-colors">Contact</a>
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Footer">
+      <a href="services.html" class="whitespace-nowrap text-body-md text-surface-variant hover:text-accent-orange transition-colors">Services</a>
+      <a href="bush-safari.html" class="whitespace-nowrap text-body-md text-surface-variant hover:text-accent-orange transition-colors">Bush &amp; Safari</a>
+      <a href="gallery.html" class="whitespace-nowrap text-body-md text-surface-variant hover:text-accent-orange transition-colors">Gallery</a>
+      <a href="about.html" class="whitespace-nowrap text-body-md text-surface-variant hover:text-accent-orange transition-colors">About</a>
+      <a href="contact.html" class="whitespace-nowrap text-body-md text-surface-variant hover:text-accent-orange transition-colors">Contact</a>
     </nav>
+  </div>
+  <div class="border-t border-outline/30">
+    <div class="mx-auto flex max-w-container-max flex-col items-center justify-center gap-4 px-margin-mobile md:px-margin-desktop py-6 sm:flex-row sm:gap-10">
+      <a href="tel:+26774537995" class="text-body-md text-surface-variant hover:text-accent-orange transition-colors">+267 74537995</a>
+      <a href="mailto:osekile52@gmail.com" class="text-body-md text-surface-variant hover:text-accent-orange transition-colors">osekile52@gmail.com</a>
+    </div>
   </div>
 </footer>
 
-<!-- ========================= LIGHTBOX ========================= -->
 <div id="lightbox" hidden class="fixed inset-0 z-[70] bg-on-surface/95 opacity-0 transition-opacity duration-200" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button id="lightbox-close" type="button" class="absolute right-4 top-4 z-10 grid h-12 w-12 place-items-center rounded-full bg-surface-container-lowest text-on-surface shadow-ambient" aria-label="Close image viewer">
     <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -583,136 +296,6 @@ tailwind.config = {
   </figure>
 </div>
 
-<script>
-(function () {
-  'use strict';
-
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* ---------- mobile nav ---------- */
-  var toggle = document.getElementById('nav-toggle');
-  var panel  = document.getElementById('mobile-nav');
-  var bars   = toggle.querySelectorAll('[data-bar]');
-  var navOpen = false;
-
-  function setNav(state) {
-    navOpen = state;
-    toggle.setAttribute('aria-expanded', String(state));
-    toggle.setAttribute('aria-label', state ? 'Close menu' : 'Open menu');
-    document.body.classList.toggle('nav-open', state);
-    if (state) {
-      panel.hidden = false;
-      requestAnimationFrame(function () { panel.classList.remove('opacity-0'); });
-      bars[0].style.transform = 'translateY(8px) rotate(45deg)';
-      bars[1].style.opacity   = '0';
-      bars[2].style.transform = 'translateY(-8px) rotate(-45deg)';
-    } else {
-      panel.classList.add('opacity-0');
-      bars[0].style.transform = '';
-      bars[1].style.opacity   = '';
-      bars[2].style.transform = '';
-      window.setTimeout(function () { if (!navOpen) panel.hidden = true; }, 300);
-    }
-  }
-  toggle.addEventListener('click', function () { setNav(!navOpen); });
-  panel.querySelectorAll('[data-nav-link]').forEach(function (a) {
-    a.addEventListener('click', function () { setNav(false); });
-  });
-  window.addEventListener('resize', function () {
-    if (navOpen && window.innerWidth >= 768) setNav(false);
-  });
-
-  /* ---------- lightbox ---------- */
-  var lb    = document.getElementById('lightbox');
-  var lbImg = document.getElementById('lightbox-img');
-  var lbCap = document.getElementById('lightbox-cap');
-  var lbX   = document.getElementById('lightbox-close');
-  var lastFocused = null;
-
-  function openLb(src, cap, alt) {
-    lastFocused = document.activeElement;
-    lbImg.src = src;
-    lbImg.alt = alt || cap || '';
-    lbCap.textContent = cap || '';
-    lb.hidden = false;
-    document.body.classList.add('nav-open');
-    requestAnimationFrame(function () { lb.classList.remove('opacity-0'); });
-    lbX.focus();
-  }
-  function closeLb() {
-    lb.classList.add('opacity-0');
-    document.body.classList.remove('nav-open');
-    window.setTimeout(function () { lb.hidden = true; lbImg.removeAttribute('src'); }, 200);
-    if (lastFocused) lastFocused.focus();
-  }
-  document.querySelectorAll('#gallery-grid button[data-full]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var img = btn.querySelector('img');
-      openLb(btn.dataset.full, btn.dataset.caption, img ? img.alt : '');
-    });
-  });
-  lbX.addEventListener('click', closeLb);
-  lb.addEventListener('click', function (e) { if (e.target === lb || e.target.tagName === 'FIGURE') closeLb(); });
-  document.addEventListener('keydown', function (e) {
-    if (e.key !== 'Escape') return;
-    if (!lb.hidden) closeLb();
-    else if (navOpen) setNav(false);
-  });
-
-  /* ---------- staggered reveal on scroll ----------
-     Content is visible by default (.js gating in CSS): if this never runs,
-     nothing is hidden. Each element reveals once and is then unobserved, so
-     scrolling back up never re-fires it. */
-  var STAGGER_MS = 170;   // offset between siblings
-  var STAGGER_MAX = 5;    // cap so a long wave never stalls
-  var WAVE_MS = 400;      // siblings arriving within this window share a wave
-
-  var revealItems = document.querySelectorAll('.reveal');
-  var motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-  function revealAll() {
-    revealItems.forEach(function (el) { el.style.transitionDelay = ''; el.classList.add('in'); });
-  }
-
-  if (!('IntersectionObserver' in window) || motionQuery.matches) {
-    revealAll();
-  } else {
-    var waves = new WeakMap();
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (!en.isIntersecting) return;
-        var el = en.target;
-        var group = el.closest('[data-reveal-group]') || document.documentElement;
-        var now = (window.performance && performance.now) ? performance.now() : Date.now();
-        var wave = waves.get(group);
-        if (!wave || now - wave.last > WAVE_MS) wave = { n: 0, last: now };
-        el.style.transitionDelay = (Math.min(wave.n, STAGGER_MAX) * STAGGER_MS) + 'ms';
-        wave.n += 1; wave.last = now;
-        waves.set(group, wave);
-        el.classList.add('in');
-
-        // Clear the delay once it has played so it cannot affect later
-        // transitions (hover lifts, the lightbox). transitionend does not fire
-        // if the transition never actually runs, so time it out as well.
-        var clearDelay = function () {
-          el.style.transitionDelay = '';
-          el.removeEventListener('transitionend', clearDelay);
-          window.clearTimeout(el._revealTimer);
-        };
-        el.addEventListener('transitionend', clearDelay);
-        el._revealTimer = window.setTimeout(clearDelay, (Math.min(wave.n, STAGGER_MAX) * STAGGER_MS) + 1200);
-
-        io.unobserve(el);
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-
-    revealItems.forEach(function (el) { io.observe(el); });
-
-    var onMotionChange = function (e) { if (e.matches) { io.disconnect(); revealAll(); } };
-    if (motionQuery.addEventListener) motionQuery.addEventListener('change', onMotionChange);
-    else if (motionQuery.addListener) motionQuery.addListener(onMotionChange);
-  }
-})();
-</script>
+<script src="assets/site.js"></script>
 </body>
 </html>
