@@ -19,21 +19,3 @@ body { background-color: #fcf8f7; color: #1c1b1b; }
   *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
 }
 body.nav-open { overflow: hidden; }
-
-/* Booking form controls. Colours mirror the design tokens in
-   assets/tailwind.config.js so the form matches whether or not the CDN loads. */
-.field {
-  width: 100%; padding: 0.875rem 1rem; background: #ffffff;
-  border: 2px solid #c4c7c3; border-radius: 0.5rem;
-  font: inherit; font-size: 16px; color: #1c1b1b; /* 16px avoids iOS zoom-on-focus */
-}
-.field::placeholder { color: #747875; }
-.field:hover { border-color: #747875; }
-.field:focus { outline: none; border-color: #E8722C; box-shadow: 0 0 0 3px rgba(232, 114, 44, 0.22); }
-/* Only flag invalid fields the visitor has actually tried to submit. */
-.was-validated .field:invalid { border-color: #ba1a1a; }
-.was-validated .field:invalid:focus { box-shadow: 0 0 0 3px rgba(186, 26, 26, 0.20); }
-select.field { appearance: none; padding-right: 2.5rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23444845' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat; background-position: right 0.875rem center; background-size: 1.25rem;
-}
