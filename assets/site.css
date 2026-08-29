@@ -1,0 +1,21 @@
+html { scroll-behavior: smooth; }
+body { background-color: #fcf8f7; color: #1c1b1b; }
+::selection { background: #E8722C; color: #fff; }
+:focus-visible { outline: 3px solid #E8722C; outline-offset: 3px; border-radius: 8px; }
+
+/* Signature "cloche" / archway frame for hero and featured imagery */
+.arched-frame { border-radius: 50% 50% 1rem 1rem / 10% 10% 1rem 1rem; }
+@media (min-width: 768px) { .arched-frame { border-radius: 50% 50% 1rem 1rem / 20% 20% 1rem 1rem; } }
+
+/* Progressive enhancement: hidden only while JS runs and motion is allowed. */
+.js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; will-change: opacity, transform; }
+.js .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal, .js .reveal.in {
+    opacity: 1 !important; transform: none !important;
+    transition: none !important; transition-delay: 0ms !important;
+  }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+body.nav-open { overflow: hidden; }
